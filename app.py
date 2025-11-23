@@ -3,7 +3,6 @@ def db():
 def protocolo_novo():
     if request.method == 'POST':
         conn = db()
-        conn.execute('INSERT INTO protocolos (data, solicitante, endereco, tipo_servico, descricao, status)
                       VALUES (?, ?, ?, ?, ?, ?)', (
             str(datetime.datetime.now()),
             request.form['solicitante'],
