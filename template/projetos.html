@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+<h3>Projetos</h3>
+<a href="/projeto/novo" class="btn btn-primary mb-3">Novo Projeto</a>
+<table class="table table-bordered">
+<tr>
+<th>ID</th><th>Nome</th><th>Status</th>
+</tr>
+{% for p in projetos %}
+<tr>
+<td>{{ p.id }}</td>
+<td>{{ p.nome }}</td>
+<td>{{ p.status }}</td>
+</tr>
+{% endfor %}
+</table>
+{% endblock %}
