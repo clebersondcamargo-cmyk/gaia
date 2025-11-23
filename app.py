@@ -1,4 +1,3 @@
-```python
 def db():
 @app.route('/protocolo/novo', methods=['GET','POST'])
 def protocolo_novo():
@@ -51,4 +50,3 @@ def upload():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
-```
