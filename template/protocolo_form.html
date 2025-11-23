@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+<h3>Novo Protocolo</h3>
+<form method="POST">
+<input class="form-control mb-2" name="solicitante" placeholder="Solicitante">
+<input class="form-control mb-2" name="endereco" placeholder="Endereço">
+<input class="form-control mb-2" name="tipo_servico" placeholder="Tipo de serviço">
+<textarea class="form-control mb-2" name="descricao" placeholder="Descrição"></textarea>
+<button class="btn btn-success">Salvar</button>
+</form>
+{% endblock %}
