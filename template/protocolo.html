@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+<h3>Protocolos</h3>
+<a href="/protocolo/novo" class="btn btn-success mb-3">Novo Protocolo</a>
+<table class="table table-bordered">
+<tr>
+<th>ID</th><th>Data</th><th>Solicitante</th><th>Status</th>
+</tr>
+{% for p in protocolos %}
+<tr>
+<td>{{ p.id }}</td>
+<td>{{ p.data }}</td>
+<td>{{ p.solicitante }}</td>
+<td>{{ p.status }}</td>
+</tr>
+{% endfor %}
+</table>
+{% endblock %}
